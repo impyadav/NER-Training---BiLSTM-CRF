@@ -1,0 +1,19 @@
+#Initial setting
+data_dir: data/
+csv_file: data/something.csv
+
+model_dir: models/
+model_name: ner_model
+
+
+#parameters
+dense_embedding: 128
+dense_units: 100
+lstm_units: 128
+lstm_dropout: 0.2
+batch_size: 256
+max_epochs: 5
+
+#vocab feature
+
+

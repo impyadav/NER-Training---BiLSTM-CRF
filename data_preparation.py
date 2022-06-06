@@ -52,17 +52,18 @@ class nerDataPrep:
 
 
 if __name__ == '__main__':
-    dataPrepObj = nerDataPrep('../data/something.csv')
-    dataPrepObj.print_info()
-    df, word2idx, idx2word, tag2idx, idx2tag, MAX_LEN = dataPrepObj.create_dict()
-    sentences = df.groupby('Sentence #').apply(dataPrepObj.create_tuples).tolist()
-
-    X = [[item[0] for item in sentence] for sentence in sentences]
-    y = [[item[2] for item in sentence] for sentence in sentences]
-
-    X = [[word2idx[word] for word in sentence] for sentence in X]
-    y = [[tag2idx[tag] for tag in sentence] for sentence in y]
-
-    print('X shape:', X.shape)
-    print('y shape: ', y.shape)
+    pass
+    # dataPrepObj = nerDataPrep('../data/something.csv')
+    # dataPrepObj.print_info()
+    # df, word2idx, idx2word, tag2idx, idx2tag, MAX_LEN = dataPrepObj.create_dict()
+    # sentences = df.groupby('Sentence #').apply(dataPrepObj.create_tuples).tolist()
+    #
+    # X = [[item[0] for item in sentence] for sentence in sentences]
+    # y = [[item[2] for item in sentence] for sentence in sentences]
+    #
+    # X = [[word2idx[word] for word in sentence] for sentence in X]
+    # y = [[tag2idx[tag] for tag in sentence] for sentence in y]
+    #
+    # print('X shape:', X.shape)
+    # print('y shape: ', y.shape)
 
